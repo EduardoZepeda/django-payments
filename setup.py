@@ -18,7 +18,8 @@ PACKAGES = [
     'payments.sagepay',
     'payments.sofort',
     'payments.stripe',
-    'payments.wallet']
+    'payments.wallet',
+    'payments.mercadopago']
 
 REQUIREMENTS = [
     'braintree>=3.14.0',
@@ -28,7 +29,8 @@ REQUIREMENTS = [
     'requests>=1.2.0',
     'stripe>=2.6.0',
     'suds-jurko>=0.6',
-    'xmltodict>=0.9.2']
+    'xmltodict>=0.9.2',
+    'mercadopago>=0.3.5']
 
 
 class PyTest(TestCommand):
