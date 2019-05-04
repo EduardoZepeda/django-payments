@@ -192,6 +192,28 @@ E.g: ``https://example.com/payments/process/wallet``
 This backend does not support fraud detection.
 
 
+Mercado Pago
+------------
+
+.. class:: payments.mercadopago.MercadoPagoProvider(access_token, init_point)
+
+   This Backend implmenets payments using `mercadopago.com <https://www.mercadopago.com>`_.
+
+   :param access_token: Access token assigned by Mercado Pago
+   :param init_point: The API endpoit to use. Use ``'sandbox_init_point'`` for development or ``'init_point'`` for production
+
+
+Example::
+
+      # use sandbox
+      PAYMENT_VARIANTS = {
+          'mercadopago':('payments.mercadopago.MercadoPagoProvider',{
+              'access_token': 'TEST-1111111111111111-111111-a1a1111a1aa1111111a11a111a1111a1-111111111',
+              'init_point': 'sandbox_init_point'})}
+
+This backend does not support fraud detection.
+
+
 PayPal
 ------
 
@@ -210,7 +232,7 @@ Example::
       # use sandbox
       PAYMENT_VARIANTS = {
           'paypal': ('payments.paypal.PaypalProvider', {
-              'client_id': 'user@example.com',
+          'client_id': 'user@example.com',
               'secret': 'iseedeadpeople',
               'endpoint': 'https://api.sandbox.paypal.com',
               'capture': False})}
