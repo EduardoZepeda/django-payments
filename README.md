@@ -1,13 +1,6 @@
-django-payments
-===============
+django-payments-mercadopago
+===========================
 
-Universal payment handling for Django
+A mercadopago payment gateway backend for django-payments
 
-Documentation: https://django-payments.readthedocs.org/
-
-
-Additional payment providers
-----------------------------
-
-* [BNL POSitivity (BNP Paribas)](https://github.com/esistgut/django-payments-bnlepos)
-* [Redsys (formerly known as Sermepa)](https://github.com/ajostergaard/django-payments-redsys)
+This package is now an independent repository and was moved to [django-payments-mercadopago](https://github.com/EduardoZepeda/django-payments-mercadopago)
